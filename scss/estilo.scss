@@ -1,0 +1,290 @@
+@import "reseteo-y-variables";
+@import "body";
+@import "header";
+@import "footer";
+
+
+
+/*   MAIN ---------------------------------------------------------------*/
+
+
+
+main{
+
+    .banner_nvidia {
+        width: 100vw;
+        height: 250px;
+          
+    }
+    .bannerMarcasPcs {
+        width: 100vw;
+        height: 80px;
+        
+    }
+    .bannerGigabyte{
+        width: 100vw;
+        height: 150px;
+        
+    }
+    .bannerNotebooks {
+        width: 100vw;
+        height: 80px;
+        
+      }
+    
+
+
+    .titulo_ofertas {
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 300px;
+        height: 40px;
+        border: solid 1px ;
+        border-radius: 10px ;
+        text-align: center;
+        padding-bottom: 1px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(122, 15, 215, 0.945);
+        font-family: 'Alumni Sans Pinstripe', sans-serif;
+        font-size: 2.2rem;
+    }
+
+    .sectionIndex {
+    margin: 2px;
+    border: solid 1px rgb(211, 211, 211); 
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7fbfc+0,e8eeef+35,d1ccea+100 */
+    background: #f7fbfc; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #f7fbfc 0%, #e8eeef 35%, #d1ccea 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #f7fbfc 0%,#e8eeef 35%,#d1ccea 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #f7fbfc 0%,#e8eeef 35%,#d1ccea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#d1ccea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "cuadro1 cuadro2 cuadro3 cuadro4 cuadro5"
+    "cuadro6 cuadro7 cuadro8 cuadro9 cuadro10";
+    justify-content: center;
+
+        .prod_oferta {
+            
+            margin: 10px;
+            width: 220px;
+            border: solid 3px rgba(0, 0, 0, 0.082);
+            border-radius: 10px;
+            text-align: center;
+            font-family: $roboto;
+            transition: all 0.5s ease;
+                &:hover {
+                 transform: scale(1.1,1.1);
+                 border: solid 4px rgba(69, 231, 19, 0.993);
+                box-shadow:  5px 10px 5px rgb(48, 168, 56);
+                }
+
+
+            .pic_prod_of {
+            width: 210px;
+            height: 250px;
+             }    
+   
+        }
+
+        .primer_producto {
+        grid-area: cuadro2;
+        
+         }
+
+        .segundo_producto{
+            grid-area: cuadro3;
+        }
+
+        .tercer_producto {
+            grid-area: cuadro4;
+        }
+        
+          
+        .pc {
+            width: 200px;
+            height: 250px;
+            border: $verde-irantech solid 2px;
+            border-radius: 10px;
+            background-color: $verde-irantech;
+            display:none ;
+        }
+        .notebooks {
+            width: 200px;
+            height: 250px;
+            border: $verde-irantech solid 2px;
+            border-radius: 10px;
+            background-color: $verde-irantech;
+            display:none ;
+        }
+        
+        .contacto {
+            width: 200px;
+            height: 250px;
+            border: $verde-irantech solid 2px;
+            border-radius: 20px;
+            background-color: $verde-irantech;
+            display:none;
+        }
+
+
+        
+
+    }    
+
+   
+    .sectionPcs {
+        margin-top: 10px;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .prodPc {
+            padding-top: 20px;
+            margin: 20px;
+            width: 270px;
+            height: 400px;
+            border: solid 3px rgba(0, 0, 0, 0.082); 
+            border-radius: 10px;
+            text-align: center;
+            font-family: $roboto;
+            transition: all 0.5s ease;
+            
+                &:hover {
+                    transform: scale(1.1,1.1);
+                    box-shadow:  5px 10px 5px $sombra-azul;
+                    font-size: 1.1rem;
+    
+                 }
+                .picPcs {
+                width: 250px;
+                height: 220px;
+                }
+        
+        }
+        
+        
+     }
+     .sectionGigabyte{
+        margin: 30px;
+        width: 90vw;
+        height: 700px;
+        border: solid rgba(0, 0, 0, 0.293) 1px;   
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+       grid-template-areas: 
+       "costado . frente descuento"
+       "back . frente  texto  "
+       "conecciones . frente texto ";
+       
+            .imgdescuento {
+                width: 200px;
+                grid-area: descuento;
+                justify-self: center;
+                align-self: end;
+            }
+            
+            .imgg24fcostado {
+                margin-left: 10px;
+                width: 200px;
+                border: solid black 1px;
+                grid-area: costado;
+                align-self: center;
+            }
+            
+            .imgg24fback {
+                margin-left: 10px;
+                width: 200px;
+                border: solid black 1px;
+                grid-area: back;
+                align-self: center;
+            }
+            
+            .imgg24fconecciones {
+                margin-left: 10px;
+                padding: 5px;
+                width: 200px;
+                border: solid black 1px;
+                grid-area: conecciones;
+                align-self: center;
+            }
+            
+            
+            
+            
+            .Imgg24fFrente {
+                width: 600px;
+                grid-area: frente;
+                align-self: center;
+            }
+    
+            .specs {
+                grid-area: texto;
+                font-family: $roboto;
+                justify-self: center;
+                font-size: 1.5rem;
+                
+            }
+
+
+       
+     }
+     
+     .ContactoTitulo {
+        font-family: 'Alumni Sans Pinstripe', sans-serif;
+        font-size: 2.4rem;
+        text-align: center;
+        font-weight: 800;
+        color: rgb(38, 168, 197);
+    
+    
+    }
+    .sectionNotebooks {
+        margin: auto;
+        width: 90vw;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        .prodNote {
+            padding-top: 20px;
+            margin: 20px;
+            width: 350px;
+            height: 400px;
+            border: solid 3px rgba(0, 0, 0, 0.082); 
+            border-radius: 10px;
+            text-align: center;
+            font-family: $roboto;
+            transition: all 0.5s ease;
+
+                &:hover {
+                transform: scale(1.1,1.1);
+                box-shadow:  5px 10px 5px $sombra-azul;
+                font-size: 1.1rem;
+                
+                }
+                .picNote {
+        
+                    width: 320px;
+                    height: 200px;
+                }
+            
+
+        }
+    
+
+
+
+      }
+
+
+
+}
+
+
+@import "media-query";

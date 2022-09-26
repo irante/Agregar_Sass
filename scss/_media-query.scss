@@ -1,0 +1,255 @@
+
+
+/* Index ........................................................*/
+
+
+@media only screen and (max-width:768px){
+
+    
+    .primer_producto {
+        
+        display: none;
+        
+    }
+
+    .segundo_producto{
+        
+        display: none;
+      }
+
+    .tercer_producto {
+    
+        display: none;
+    }
+
+    main .sectionIndex .pc {
+        display: grid;
+        grid-area: cuadro2 ;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        transition: all 0.5s ease;
+  
+            &:hover{
+                    transform: scale(1.05,1.05);
+                }
+            .imagenpc {
+                    width: 190px;
+                    height: 200px;
+            }
+             a {
+                    text-decoration: none;
+            }
+
+
+
+    }
+
+    
+    main .sectionIndex .notebooks {
+        display: grid;
+        grid-area: cuadro3 ;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        transition: all 0.5s ease;
+            &:hover{
+                    transform: scale(1.05,1.05);
+            }
+            .imagennotebook {
+                    width: 190px;
+                    height: 200px;
+            }   
+             a {
+                    text-decoration: none;
+            }
+
+
+        
+    }
+    
+
+    main .sectionIndex .contacto {
+        display: grid;
+        grid-area: cuadro7 ;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        transition: all 0.5s ease;
+        
+            &:hover{
+                     transform: scale(1.05,1.05);
+           }
+
+            .imagen_contacto {
+                     width: 190px;
+                     height: 200px;
+                     padding: 1px;
+             }
+
+             a {
+             text-decoration: none;
+              }
+
+
+
+    }
+    
+
+    
+ 
+
+    .titulo_ofertas{
+        display: none;
+    }
+
+    main .banner_nvidia {
+        width: 100vw;
+        height: 80px;
+     
+      
+        
+    }
+
+
+   
+
+}
+ /*pcs .............................................................*/
+ 
+ @media only screen and (max-width:768px){
+    main .sectionPcs {
+        flex-direction: column;
+        align-content: center;
+        
+       
+        }
+        
+        
+        .bannerMarcasPcs {
+            width: 100vw;
+            height: 80px;
+           
+        }
+
+   
+    }
+    
+
+
+    /* Notebooks ................................................................. */
+
+
+    @media only screen and (max-width:768px){
+        main .sectionNotebooks {
+          
+            flex-direction: column;
+            align-content: center;
+                    
+        }
+                    
+                    
+        .bannerNotebooks {
+        width: 100vw;
+        height: 80px;
+        
+        }
+                      
+     }
+
+     
+
+     /* Contacto .........................................................................*/
+
+     @media only screen and (max-width:768px){
+        .sectionContacto {
+        
+        
+        margin-left: 50px;
+       
+        padding: 5PX;
+        width: 79vw;
+        height: 300px;
+        
+        flex-direction: row;
+       
+        justify-content: space-evenly;
+       
+        font-family: 'Roboto', sans-serif;
+        box-shadow:  5px 2px 5px rgba(13, 179, 68, 0.648);
+        border-radius: 10px;
+     
+        }
+
+     }
+
+    /* Monitor Gigabyte ......................................................................*/ 
+     @media only screen and (max-width:768px){
+
+     
+
+     main .sectionGigabyte{
+        
+        width: 85vw;
+        height: 750px;
+       grid-template-areas: 
+       "frente frente frente frente"
+       "frente frente frente frente  "
+       "descuento descuento texto texto ";
+       
+            .Imgg24fFrente {
+                    width: 65%;
+                    margin-left: 50px;
+                    grid-area: frente;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            
+            .imgdescuento {
+                    width: 130px;
+                    grid-area: descuento;
+                    justify-self: center;
+                    align-self: flex-start;
+                }
+
+            .imgg24fcostado {
+                    display: none;
+                }
+
+        
+            .imgg24fback {
+                display: none;
+            }
+
+            .imgg24fconecciones {
+                display: none;
+                }
+
+            .specs {
+                grid-area: texto;
+                font-family: 'Roboto', sans-serif;
+                justify-self: center;
+                font-size: 1.5rem;
+                
+                }
+
+
+
+       }
+
+       
+
+
+    }
+
+   

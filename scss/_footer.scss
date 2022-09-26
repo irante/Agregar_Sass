@@ -1,0 +1,67 @@
+/* FOOTER TODOS---------------------------------------------------------------------------------------------*/
+
+footer {
+    margin-top: 20px;
+    padding-left: 20px;    
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    color: white;
+    background-image: url(../Imagenes/fondo_footer.jpg);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "mapa dire . . ."
+    "phone numTel . . ."
+    "wspPic numeroTelWsp . . . "
+    "relojPic semana . . ."
+    ". sabado . . .";
+    gap: 10px;
+
+    .picMapa {
+    width: 30px;
+    grid-area: mapa ;
+    }
+
+    .picPhone {
+    width: 30px;
+    grid-area: phone ;
+    }
+
+    .wspPic {
+    width: 30px;
+    grid-area: wspPic;
+    }
+
+    .relojPic {
+    width: 30px;
+    grid-area: relojPic;
+    }
+
+    .dire {
+    grid-area: dire;
+    }
+
+    .numTel {
+    grid-area: numTel;
+
+    }
+
+    .numTelWsp {
+    grid-area: numeroTelWsp;
+    }
+
+    .semana {
+    grid-area: semana;
+
+    }
+
+    .sabado{
+    grid-area: sabado;
+
+    }
+
+
+    
+}
