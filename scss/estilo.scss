@@ -103,7 +103,7 @@ main{
             grid-area: cuadro4;
         }
         
-         @mixin Cards_chicas{
+         @mixin Cards_chicas{                         /*se define mixin para cards mediaquery index*/
             width: 200px;
             height: 250px;
             border: $verde-irantech solid 2px;
@@ -114,7 +114,7 @@ main{
 
 
         .pc {
-            @include Cards_chicas;
+            @include Cards_chicas;                  /*se aplica mixin cards mediaquery*/
         }
 
         .notebooks {

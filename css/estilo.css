@@ -129,13 +129,16 @@ main .sectionIndex {
   main .sectionIndex .tercer_producto {
     grid-area: cuadro4; }
   main .sectionIndex .pc {
+    /*se define mixin para cards mediaquery index*/
     width: 200px;
     height: 250px;
     border: #05af77 solid 2px;
     border-radius: 10px;
     background-color: #05af77;
-    display: none; }
+    display: none;
+    /*se aplica mixin cards mediaquery*/ }
   main .sectionIndex .notebooks {
+    /*se define mixin para cards mediaquery index*/
     width: 200px;
     height: 250px;
     border: #05af77 solid 2px;
@@ -143,6 +146,7 @@ main .sectionIndex {
     background-color: #05af77;
     display: none; }
   main .sectionIndex .contacto {
+    /*se define mixin para cards mediaquery index*/
     width: 200px;
     height: 250px;
     border: #05af77 solid 2px;
