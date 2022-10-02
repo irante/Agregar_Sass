@@ -103,35 +103,29 @@ main{
             grid-area: cuadro4;
         }
         
-          
+         @mixin Cards_chicas{
+            width: 200px;
+            height: 250px;
+            border: $verde-irantech solid 2px;
+            border-radius: 10px;
+            background-color: $verde-irantech;
+            display:none ;
+         } 
+
+
         .pc {
-            width: 200px;
-            height: 250px;
-            border: $verde-irantech solid 2px;
-            border-radius: 10px;
-            background-color: $verde-irantech;
-            display:none ;
+            @include Cards_chicas;
         }
+
         .notebooks {
-            width: 200px;
-            height: 250px;
-            border: $verde-irantech solid 2px;
-            border-radius: 10px;
-            background-color: $verde-irantech;
-            display:none ;
-        }
+            @include Cards_chicas;
+            }
         
         .contacto {
-            width: 200px;
-            height: 250px;
-            border: $verde-irantech solid 2px;
-            border-radius: 20px;
-            background-color: $verde-irantech;
-            display:none;
+            @include Cards_chicas;
         }
 
 
-        
 
     }    
 
