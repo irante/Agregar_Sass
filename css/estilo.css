@@ -158,6 +158,7 @@ main .sectionPcs {
   flex-wrap: wrap;
   justify-content: space-evenly; }
   main .sectionPcs .prodPc {
+    /*se define mixin de card pc y notebboks*/
     padding-top: 20px;
     margin: 20px;
     width: 270px;
@@ -166,14 +167,15 @@ main .sectionPcs {
     border-radius: 10px;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    /*se aplica mixin a cards pc*/ }
     main .sectionPcs .prodPc:hover {
       transform: scale(1.1, 1.1);
       box-shadow: 5px 10px 5px #45a6e6;
       font-size: 1.1rem; }
-    main .sectionPcs .prodPc .picPcs {
-      width: 250px;
-      height: 220px; }
+  main .sectionPcs .picPcs {
+    width: 250px;
+    height: 220px; }
 
 main .sectionGigabyte {
   margin: 30px;
@@ -234,6 +236,7 @@ main .sectionNotebooks {
   flex-direction: row;
   align-items: center; }
   main .sectionNotebooks .prodNote {
+    /*se define mixin de card pc y notebboks*/
     padding-top: 20px;
     margin: 20px;
     width: 350px;
@@ -242,7 +245,8 @@ main .sectionNotebooks {
     border-radius: 10px;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    /*se aplica mixin a cards notebooks*/ }
     main .sectionNotebooks .prodNote:hover {
       transform: scale(1.1, 1.1);
       box-shadow: 5px 10px 5px #45a6e6;
