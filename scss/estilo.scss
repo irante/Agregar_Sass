@@ -50,7 +50,9 @@ main{
     }
 
     .sectionIndex {
-    margin: 2px;
+    text-align: center;    
+    width: 95vw;    
+    margin: auto;
     border: solid 1px rgb(211, 211, 211); 
    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7fbfc+0,e8eeef+35,d1ccea+100 */
     background: #f7fbfc; /* Old browsers */
@@ -65,6 +67,7 @@ main{
     "cuadro1 cuadro2 cuadro3 cuadro4 cuadro5"
     "cuadro6 cuadro7 cuadro8 cuadro9 cuadro10";
     justify-content: center;
+    justify-items: center;
 
         .prod_oferta {
             
